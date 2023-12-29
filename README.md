@@ -1,0 +1,1 @@
+###We start making ShoppinglyX website using Django Framework.
