@@ -1,1 +1,1 @@
-###We start making ShoppinglyX website using Django Framework.
+#Here we start making ShoppinglyX website using Django Framework.
