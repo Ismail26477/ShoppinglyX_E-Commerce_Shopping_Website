@@ -6,7 +6,7 @@ from django.contrib import messages
 
 #def home(request):
 # return render(request, 'app/home.html')
-
+ 
 class ProductView(View):
  def get(sef, request):
   topwears = Product.objects.filter(category='TW')
@@ -39,8 +39,8 @@ def address(request):
 def orders(request):
  return render(request, 'app/orders.html')
 
-def change_password(request):
- return render(request, 'app/changepassword.html')
+#def change_password(request):
+# return render(request, 'app/changepassword.html')
 
 def mobile(request, data=None):
  if data == None:
@@ -53,8 +53,8 @@ def mobile(request, data=None):
   mobiles = Product.objects.filter(category='M').filter(discounted_price__gt=10000)
  return render(request, 'app/mobile.html', {'mobiles':mobiles})
 
-def login(request):
- return render(request, 'app/login.html')
+#def login(request):
+#    return render(request, 'app/login.html')
 
 #def customerregistration(request):
 # return render(request, 'app/customerregistration.html')
